@@ -1,0 +1,20 @@
+########################################################################
+## Licensed Material - Property of IBM
+##
+## 5724-E46
+##
+## (c) Copyright IBM Corp. 2006. All rights reserved.
+##
+## US Government Users Restricted Rights - Use, duplication or
+## disclosure restricted by GSA ADP Schedule Contract with
+## IBM Corp.
+########################################################################
+## History
+## -------
+## mm-dd-yyyy    Id  Comment
+#########################################################################
+
+REPLICATE ALL FROM TABLE 'alerts.status'
+	USING MAP 'StatusMap';
+
+

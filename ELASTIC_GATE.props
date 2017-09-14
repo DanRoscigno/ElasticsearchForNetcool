@@ -1,0 +1,26 @@
+#######################################################################
+#
+#       Licensed Materials - Property of IBM
+#       
+#       
+#       
+#       (C) Copyright IBM Corp. 2014. All Rights Reserved
+#       
+#       US Government Users Restricted Rights - Use, duplication
+#       or disclosure restricted by GSA ADP Schedule Contract
+#       with IBM Corp.
+#
+#
+#######################################################################
+# To make alterations to the default value for any properties
+# append the new values here:-
+#
+#######################################################################
+
+
+Name: 'ELASTIC_GATE'
+Gate.RdrWtr.Server: 'AGG_V'
+Gate.Socket.Port: 1234
+Gate.Socket.Host: 'sidr30eoisnco01'
+Gate.MapFile: '$OMNIHOME/etc/ELASTIC_GATE.map'
+Gate.RdrWtr.TblReplicateDefFile: '$OMNIHOME/etc/ELASTIC_GATE.tblrep.def'

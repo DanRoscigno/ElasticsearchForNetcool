@@ -1,0 +1,50 @@
+##############################################################################
+#
+# Notes:
+#
+# Fields that are marked as 'ON INSERT ONLY' will only be passed when an event
+# is inserted for the first time. (ie. they will not be updated). The ordering
+# of the fields is not important as the gateway will use named value insertion.
+#
+###############################################################################
+
+CREATE MAPPING StatusMap
+(
+	'Identifier'	   = 	'@Identifier'		ON INSERT ONLY,
+	'Node'		   =	'@Node'			ON INSERT ONLY,
+	'NodeAlias'	   =	'@NodeAlias'		ON INSERT ONLY
+								NOTNULL '@Node',
+	'Manager'	   =	'@Manager'		ON INSERT ONLY,
+	'Agent'		   =	'@Agent'		ON INSERT ONLY,
+	'AlertGroup'	   =	'@AlertGroup'		ON INSERT ONLY,
+	'AlertKey'	   =	'@AlertKey'		ON INSERT ONLY,
+	'Severity'	   =	'@Severity',
+	'Summary'	   =	'@Summary',
+	'StateChange'	   =	'@StateChange',
+	'FirstOccurrence'  =	'@FirstOccurrence'	ON INSERT ONLY,
+	'LastOccurrence'   =	'@LastOccurrence',
+	'Type'		   =	'@Type'			ON INSERT ONLY,
+	'Tally'		   =	'@Tally',
+	'Class'		   =	'@Class'		ON INSERT ONLY,
+	'Grade'		   =	'@Grade'		ON INSERT ONLY,
+	'Location'	   =	'@Location'		ON INSERT ONLY,
+	'OwnerUID'	   =	'@OwnerUID',
+	'OwnerGID'	   =	'@OwnerGID',
+	'Acknowledged'	   =	'@Acknowledged',
+	'EventId'	   =	'@EventId'		ON INSERT ONLY,
+	'ExpireTime'	   =	'@ExpireTime'		ON INSERT ONLY,
+	'SuppressEscl'	   =	'@SuppressEscl',
+	'Customer'	   =	'@Customer' 		ON INSERT ONLY,
+	'Service'	   =	'@Service'		ON INSERT ONLY,
+	'URL'		   =	'@URL'			ON INSERT ONLY,
+        'OriginalSeverity' =    '@Severity'             ON INSERT ONLY,
+        'Application'      =    '@application'          ON INSERT ONLY,
+        'RunbookURL'       =    '@RunBookURL'           ON INSERT ONLY,
+        'OpsTeam'          =    '@OpsTeam',
+        'Stage'            =    '@Stage',
+        'TicketUrgency'    =    '@TicketUrgency',
+        'SlackURL'         =    '@SlackURL',
+	'ServerName'	   =	'@ServerName'		ON INSERT ONLY,
+	'ServerSerial'	   =	'@ServerSerial'		ON INSERT ONLY
+);
+
