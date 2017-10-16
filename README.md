@@ -53,7 +53,7 @@ cd /opt/IBM/netcool/logstash/
 
 
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](https://assets-cdn.github.com/images/modules/open_graph/github-mark.png)
 Format: ![Alt Text](url)
 
 
