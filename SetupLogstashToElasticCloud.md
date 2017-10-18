@@ -2,51 +2,51 @@
 
 Navigate to https://cloud.elastic.co/ and log in or sign up for a free (as in no credit card needed!) trial
 
-![ScreenShot2017-10-16at9.48.16AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at9.48.16AM.png)
+![ScreenShot2017-10-16at9.48.16AM](https://user-images.githubusercontent.com/25182304/31694577-33ad18f6-b373-11e7-80ef-1f6e61b37c2d.png)
 
 **Create a cluster**
 
 You can accept the defaults, there is one option in there to ask for high availability across two data centers, this time I just took the default
 
-![ScreenShot2017-10-16at9.48.38AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at9.48.38AM.png)
+![ScreenShot2017-10-16at9.48.38AM](https://user-images.githubusercontent.com/25182304/31694578-33bd5946-b373-11e7-8fb4-34f33657a979.png)
 
 **Don't Panic**
 
 I know it mentions $120 per month, that is if you decide to keep it.  They will not bill you automatically, in fact they will ask you at the end if you want to subscribe and will even store your data for a bit after the 14 days
 
-![ScreenShot2017-10-16at9.49.37AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at9.49.37AM.png)
+![ScreenShot2017-10-16at9.49.37AM](https://user-images.githubusercontent.com/25182304/31694579-33cee788-b373-11e7-89f8-05df1d7e1b8e.png)
 
 **Store your password in a safe place**
 
-![ScreenShot2017-10-16at9.50.20AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at9.50.20AM.png)
+![ScreenShot2017-10-16at9.50.20AM](https://user-images.githubusercontent.com/25182304/31694580-33d9f3d0-b373-11e7-9e4a-213e5747e944.png)
 
 **Save this URL**
 
 Take note of your endpoint, this is where you will send data to
 
-![ScreenShot2017-10-16at9.50.59AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at9.50.59AM.png)
+![ScreenShot2017-10-16at9.50.59AM](https://user-images.githubusercontent.com/25182304/31694581-33e88ac6-b373-11e7-8704-46127606fc06.png)
 
 **Save your Kibana URL**
 
 The Kibana URL is under Configuration
 
-![ScreenShot2017-10-16at9.55.13AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at9.55.13AM.png)
+![ScreenShot2017-10-16at9.55.13AM](https://user-images.githubusercontent.com/25182304/31694582-33fabcd2-b373-11e7-88f1-af4724891d7f.png)
 
 **Connect to Kibana**
 
 Log in as user **elastic** with the password you wrote down above
 
-![ScreenShot2017-10-16at9.59.59AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at9.59.59AM.png)
+![ScreenShot2017-10-16at9.59.59AM](https://user-images.githubusercontent.com/25182304/31694583-340a21ea-b373-11e7-947c-10cbea71790f.png)
 
 **Ignore the index warning**
 
 When you send data in you will be able to choose a default index, don't worry about this for now.  Click on Management in the left navigation, and then on Management in the breadcrumbs on the right
 
-![ScreenShot2017-10-16at10.00.25AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at10.00.25AM.png)
+![ScreenShot2017-10-16at10.00.25AM](https://user-images.githubusercontent.com/25182304/31694584-3418e392-b373-11e7-95c5-8146ddceac13.png)
 
 **Closeup of the right side breadcrumb**
 
-![ScreenShot2017-10-16at10.01.35AM](/Users/droscigno/Desktop/Elastic/ScreenShot2017-10-16at10.01.35AM.png)
+![ScreenShot2017-10-16at10.01.35AM](https://user-images.githubusercontent.com/25182304/31694585-3428af66-b373-11e7-9dbf-1016fab56941.png)
 
 **See the docs on authentication**
 
@@ -163,15 +163,6 @@ a
 
 a
 
-<img width="1073" alt="screenshot2017-10-16at9 48 16am" src="https://user-images.githubusercontent.com/25182304/31694577-33ad18f6-b373-11e7-80ef-1f6e61b37c2d.png">
-<img width="1028" alt="screenshot2017-10-16at9 48 38am" src="https://user-images.githubusercontent.com/25182304/31694578-33bd5946-b373-11e7-8fb4-34f33657a979.png">
-<img width="299" alt="screenshot2017-10-16at9 49 37am" src="https://user-images.githubusercontent.com/25182304/31694579-33cee788-b373-11e7-89f8-05df1d7e1b8e.png">
-<img width="945" alt="screenshot2017-10-16at9 50 20am" src="https://user-images.githubusercontent.com/25182304/31694580-33d9f3d0-b373-11e7-9e4a-213e5747e944.png">
-<img width="1215" alt="screenshot2017-10-16at9 50 59am" src="https://user-images.githubusercontent.com/25182304/31694581-33e88ac6-b373-11e7-8704-46127606fc06.png">
-<img width="849" alt="screenshot2017-10-16at9 55 13am" src="https://user-images.githubusercontent.com/25182304/31694582-33fabcd2-b373-11e7-88f1-af4724891d7f.png">
-<img width="643" alt="screenshot2017-10-16at9 59 59am" src="https://user-images.githubusercontent.com/25182304/31694583-340a21ea-b373-11e7-947c-10cbea71790f.png">
-<img width="915" alt="screenshot2017-10-16at10 00 25am" src="https://user-images.githubusercontent.com/25182304/31694584-3418e392-b373-11e7-95c5-8146ddceac13.png">
-<img width="137" alt="screenshot2017-10-16at10 01 35am" src="https://user-images.githubusercontent.com/25182304/31694585-3428af66-b373-11e7-9dbf-1016fab56941.png">
 <img width="639" alt="screenshot2017-10-16at10 15 21am" src="https://user-images.githubusercontent.com/25182304/31694586-34387edc-b373-11e7-8036-91d029631b1c.png">
 <img width="732" alt="screenshot2017-10-16at10 19 09am" src="https://user-images.githubusercontent.com/25182304/31694587-344b0c14-b373-11e7-816c-6b6b7a92df20.png">
 <img width="278" alt="screenshot2017-10-16at10 19 29am" src="https://user-images.githubusercontent.com/25182304/31694588-345c8c1e-b373-11e7-93ac-b0f0580a5e0e.png">
