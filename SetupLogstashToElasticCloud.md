@@ -7,6 +7,21 @@
 - Getting started with moving data (2 min)
 - Help with parsing (2 min)
 
+**Demo** (5 min)
+
+**Design considerations** (5 min)
+Think about how your company works.  If your Ops team is broken into silos (DBAs, Sys Admins, App Admins, Network People, Firewall People) that don't work together, then you need to have a way to group 
+
+**Architecture** (2 min)
+
+**Setup account** and cluster (2 min)
+
+**Philosophy** (2 min)
+
+**Getting started with moving data** (2 min)
+
+**Help with parsing** (2 min)
+
 **Log in**
 
 Navigate to https://cloud.elastic.co/ and log in or sign up for a free (as in no credit card needed!) trial
