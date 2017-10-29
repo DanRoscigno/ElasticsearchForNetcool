@@ -19,6 +19,62 @@ Think about how your company works.  If your Ops team is broken into silos (DBAs
 **Philosophy** (2 min)
 
 **Getting started with moving data** (2 min)
+- Beginner Logstash config
+```
+input {
+  tcp {
+    type => "netcool"
+    codec => "plain"
+    port => 1235
+  } # end tcp
+} # end input
+
+filter {
+  mutate {
+    # The message begins with either UPDATE or INSERT depending on whether it 
+    # is a new event or an update.  In order for the CSV parser to succeed this 
+    # initial verb needs to be removed.
+    gsub => ["message", "^\w*", ""]
+  }
+
+  csv {
+    # This filter splits the message field into the indicated fields (columns).  The 
+    # name and order of the fields comes from the socket gateway mapping file.
+      skip_empty_columns => true
+      separator => ";"
+      columns => ["Node", "NodeAlias", "AlertGroup", "AlertKey", "Severity", "Summary", "StateChange", "FirstOccurrence", "LastOccurrence", "Type", "Location", "Customer", "Service", "OriginalSeverity", "ServerName" ] 
+  } #end csv
+
+} # end filters
+
+output {
+  stdout { codec => rubydebug } # end stdout 
+} # end output
+```
+- Use the Ruby Debug output
+```
+{
+            "AlertKey" => "Disk 85% full",
+           "NodeAlias" => "Tokyo",
+                "Node" => "Tokyo",
+             "Service" => "Online Banking",
+            "Severity" => "3",
+     "FirstOccurrence" => "2017-10-29T14:00:57-0500",
+             "message" => "\"Tokyo\";\"Tokyo\";\"Stats\";\"Disk 85% full\";3;\"Diskspace alert\";2017-10-29T14:06:38-0500;2017-10-29T14:00:57-0500;2017-10-29T14:06:38-0500;0;\"\";\"\";\"Online Banking\";3;\"DEMO\"",
+                "type" => "netcool",
+          "AlertGroup" => "Stats",
+                "Type" => "0",
+          "@timestamp" => 2017-10-29T19:06:39.164Z,
+                "port" => 41404,
+         "StateChange" => "2017-10-29T14:06:38-0500",
+          "ServerName" => "DEMO",
+            "@version" => "1",
+                "host" => "10.106.48.6",
+             "Summary" => "Diskspace alert",
+    "OriginalSeverity" => "3",
+      "LastOccurrence" => "2017-10-29T14:06:38-0500"
+}
+```
 
 **Help with parsing** (2 min)
 
